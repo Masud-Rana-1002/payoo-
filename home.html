@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" data-mode="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
                         <img class="w-full" src="payoo.png" alt="">
                     </div>
                     <div>
-                        <p class="text-lg font-bold">$ <span>45000</span></p>
+                        <p class="text-lg font-bold">$ <span id="availableBalance">0</span></p>
                         <p class="text-gray-600">Available Balance</p>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         <label class="label">
                           <span class="label-text font-bold">Amount to Add</span>
                         </label>
-                        <input type="text" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                        <input id="AddMoneyInput" type="text" placeholder="Add Amount to withdraw" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
@@ -113,7 +113,7 @@
                        
                       </div>
                       <div class="form-control mt-6">
-                        <button class="btn btn-primary">Add Money</button>
+                        <button id="addMoneybtn" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
                   </div>
@@ -121,6 +121,7 @@
             <!-- Add Money end -->
         </section>
     </main>
+    <script src="./js/utility.js"></script>
     <script src="./js/home.js"></script>
     <script src=""></script>
 </body>
