@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payoo</title>
+    <!-- daisyui@4 & tailwindcss cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class=" max-w-xl mx-auto">
+    <main class="h-dvh flex justify-center items-center">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <img class="w-1/2 mx-auto" src="payoo.png" alt="">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span  class="label-text font-bold">Mobile Number</span>
+                </label>
+                <input id="mobilNumber" type="text" placeholder="Enter your number" class="input input-bordered" />
+                <small class="text-red-700 hidden">Invalid Mobile Number</small>
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-bold">4 Digit Pin</span>
+                </label>
+                <input id="pinNumber" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered"  />
+                <small class="text-red-700 hidden">Invalid Pin Number</small>
+              
+              </div>
+              <div class="form-control mt-6">
+                <button id="loginBtn" class="btn text-white font-bold text-xl bg-[#3BABD1]">Login</button>
+              </div>
+            </form>
+          </div>
+    </main>
+    <script src="./js/utility.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

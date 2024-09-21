@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI & TailwindCSS cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>payooo!</title>
+</head>
+<body class="max-w-xl mx-auto ">
+    <main class="mt-6 w-11/12 mx-auto">
+        <section class="bg-white">
+            <!-- Available Balance section -->
+            <div class="flex items-center justify-between ">
+                <!-- balance -->
+                <div class="flex items-center gap-4">
+                    <!-- Logo -->
+                    <div class="w-14">
+                        <img class="w-full" src="payoo.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold">$ <span>45000</span></p>
+                        <p class="text-gray-600">Available Balance</p>
+                    </div>
+                </div>
+                <!-- Log Out btn -->
+                <div>
+                    <button class="btn btn-outline text-base hover:bg-[#0874F2] ">
+                        <svg class="w-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+                      </svg>
+                      Log Out</button>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <!-- 🔥 Welcome to Payooo! -->
+            <div class="px-2">
+                <h2 class="text-black font-bold text-2xl">🔥 Welcome to Payooo!</h2>
+                <p class="text-gray-600 text-base">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-8">
+                <div class="flex flex-col items-center justify-center
+                gap-1 border rounded-md">
+                    <img src="./assat/AddMoney.png" alt="">
+                    <p class="text-gray-600 text-base font-medium">Add Money</p>
+                </div>
+                <div class="flex flex-col items-center justify-center
+                gap-1 border rounded-md">
+                    <img src="./assat/Cashout.png" alt="">
+                    <p class="text-gray-600 text-base font-medium">Cashout</p>
+                </div>
+                <div class="flex flex-col items-center justify-center
+                gap-1 border rounded-md">
+                    <img src="./assat/TransferMoney.png" alt="">
+                    <p class="text-gray-600 text-base font-medium">Transfer Money</p>
+                </div>
+                <div class="flex flex-col items-center justify-center
+                gap-1 border rounded-md">
+                    <img src="./assat/GetBonus.png" alt="">
+                    <p class="text-gray-600 text-base font-medium">Get Bonus</p>
+                </div>
+                <div class="flex flex-col items-center justify-center
+                gap-1 border rounded-md">
+                    <img src="./assat/PayBill.png" alt="">
+                    <p class="text-gray-600 text-base font-medium">Pay Bill</p>
+                </div>
+                <div class="flex flex-col items-center justify-center
+                gap-1 border rounded-md">
+                    <img src="./assat/Transactions.png" alt="">
+                    <p class="text-gray-600 text-base font-medium">Transactions</p>
+                </div>
+            </div>
+            <!-- Latest Payment start -->
+            <div class="hidden">
+                <div class="flex justify-between items-center mt-5">
+                    <h3 class="text-black text-lg font-bold">Latest Payment</h3>
+                    <p class="text-gray-600">View All</p>
+                </div>
+                <div class="flex items-center justify-between w-11/12 mx-auto mt-3 bg-[#F4F5F7] p-3 rounded-md">
+                    <div class="flex items-center justify-center gap-3 ">
+                        <div><img src="assat/AddMoney.png" alt=""></div>
+                        <div>
+                            <p class="font-bold">Electricity Bill</p>
+                            <p>Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div>
+                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
+                          </svg>
+                          
+                    </div>
+                </div>
+            </div>
+            <!-- Latest Payment  end-->
+            <!-- Add Money start -->
+             <div class="mt-4">
+                <p class="font-bold space-y-4">Add Money</p>
+                <div class="card bg-base-100  shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Select A Bank</span>
+                        </label>
+                        <input type="text" placeholder="Select back" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="password" placeholder="password" class="input input-bordered" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Login</button>
+                      </div>
+                    </form>
+                  </div>
+             </div>
+            <!-- Add Money end -->
+        </section>
+    </main>
+    <script src="./js/home.js"></script>
+</body>
+</html>
