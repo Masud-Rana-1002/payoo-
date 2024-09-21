@@ -4,6 +4,6 @@ document.getElementById('loginBtn').addEventListener('click', function(event){
     let mobilNumber = getInputValue('mobilNumber')
     let pinNumber = getInputValue('pinNumber')
     if(mobilNumber === '1234' && pinNumber === '1234'){
-         window.location.href = '/home.html'
+         window.location.href = './home.html'
     }
 })
